@@ -27,16 +27,13 @@ def parse_docsis_info(docsis_data):
     channel_ds_cnt = len(docsis_data["data"]["channelDs"]["docsis30"])
 
     # Process upstream channels
-    # docsis,mode=up,channel=3 Modulation=64
-    # docsis,mode=up,channel=3 PowerLevel=44.5
-    # docsis,mode=up,channel=3 Frequenz=44.600
     for i in range(channel_us_cnt):
         channel = docsis_data["data"]["channelUs"]["docsis30"][i]
         output_data.append(
             {
             "mode": "up",
             "channel": channel['channelID'],
-            "Modulation": int(channel[modulation_key].replace('QAM', '')),
+            "Modulation": float(channel[modulation_key].replace('QAM', '')),
             "PowerLevel": float(channel['powerLevel']),
             "Frequenz": float(channel['frequency']),
             }
@@ -49,12 +46,12 @@ def parse_docsis_info(docsis_data):
             {
             "mode": "down",
             "channel": channel['channelID'],
-            "Modulation": int(channel[modulation_key].replace('QAM', '')),
+            "Modulation": float(channel[modulation_key].replace('QAM', '')),
             "PowerLevel": float(channel['powerLevel']),
             "Frequenz": float(channel['frequency']),
             "Latenz": float(channel['latency']),
-            "korrFehler": int(channel['corrErrors']),
-            "Fehler": int(channel['nonCorrErrors'])
+            "korrFehler": float(channel['corrErrors']),
+            "Fehler": float(channel['nonCorrErrors'])
             }
         )
 

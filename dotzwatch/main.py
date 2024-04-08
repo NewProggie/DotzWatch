@@ -7,7 +7,7 @@
 from influxdb_client import InfluxDBClient, Point, WritePrecision
 from influxdb_client.client.write_api import SYNCHRONOUS
 from config import get_env
-from dotzwatch.docsis_parser import get_docsis_info
+from docsis_parser import get_docsis_info
 
 kInfluxUrl = "http://127.0.0.1:8086"
 kInfluxToken = get_env("INFLUX_TOKEN")
