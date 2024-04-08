@@ -18,8 +18,8 @@ class TestDOCSISParser(TestCase):
 
     def test_parse_docsis_info(self):
         result = parse_docsis_info(self.docsis_data)
+        self.assertTrue(result)
         for record in result:
-            print(record)
             self.assertTrue("mode" in record.keys())
             self.assertTrue("channel" in record.keys())
             self.assertTrue("Modulation" in record.keys())

@@ -8,6 +8,8 @@ from influxdb_client import InfluxDBClient, Point, WritePrecision
 from influxdb_client.client.write_api import SYNCHRONOUS
 from config import get_env
 from docsis_parser import get_docsis_info
+from fritzconn_parser import get_conn_info
+from netspeed_parser import get_netspeed_info
 
 kInfluxUrl = "http://127.0.0.1:8086"
 kInfluxToken = get_env("INFLUX_TOKEN")
@@ -25,8 +27,22 @@ def main():
         for k, v in record.items():
             point.field(k, v)
         write_api.write(bucket="docsis", org=kOrg, record=point)
-    client.close()
 
+    # write FritzBox status
+    for info in get_conn_info():
+        point = Point("fritzbox")
+        for k, v in info.items():
+            point.tag(k, v)
+        write_api.write(bucket="fritzbox", org=kOrg, record=point)
+
+    # write netspeed benchmark
+    for info in get_netspeed_info():
+        point = Point("netspeed")
+        for k, v in info.items():
+            point.field(k, v)
+        write_api.write(bucket="netspeed", org=kOrg, record=point)
+
+    client.close()
 
 if __name__ == "__main__":
     main()

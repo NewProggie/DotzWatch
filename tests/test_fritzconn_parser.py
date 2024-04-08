@@ -16,5 +16,10 @@ class TestFritzConnParser(TestCase):
         with open(test_path) as infile:
             cls.fritzconn_data = jload(infile)
 
-    def test_parse_docsis_info(self):
+    def test_parse_conn_info(self):
         result = parse_conn_info(self.fritzconn_data)
+        self.assertTrue(result)
+        for info in result:
+            self.assertTrue("uptime" in info.keys())
+            self.assertTrue("is_connected" in info.keys())
+            self.assertTrue("ip_address" in info.keys())

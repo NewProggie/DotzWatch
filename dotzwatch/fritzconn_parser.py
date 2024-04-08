@@ -9,6 +9,7 @@ from fritz_login import get_sid
 from json import loads as jloads
 from requests import post
 
+
 def human_readable_uptime(since_timestamp):
     # Calculate the difference between now and the uptime timestamp
     uptime_start = datetime.fromtimestamp(since_timestamp)
@@ -29,18 +30,28 @@ def human_readable_uptime(since_timestamp):
 
     return readable_uptime or "Less than a minute"
 
+
 def fetch_conn_info():
     sid = get_sid()
     url = get_data_url()
     conn = post(url, get_data_payload("overview", sid), verify=False)
     return jloads(conn.text)
 
-def parse_conn_info(info):
-    v4_connected = info["data"]["internet"]["connections"][0]["ipv4"]["connected"]
-    v4_uptime = info["data"]["internet"]["connections"][0]["ipv4"]["since"]
-    print(human_readable_uptime(v4_uptime))
 
-    v6_connected = info["data"]["internet"]["connections"][0]["ipv6"]["connected"]
-    v6_uptime = info["data"]["internet"]["connections"][0]["ipv6"]["since"]
-    print(human_readable_uptime(v6_uptime))
-    return info
+def parse_conn_info(info):
+    output_data = []
+
+    ipv4 = info["data"]["internet"]["connections"][0]["ipv4"]
+    output_data.append(
+        {
+        "uptime": human_readable_uptime(ipv4["since"]),
+        "is_connected": ipv4["connected"],
+        "ip_address": ipv4["ip"]
+        }
+    )
+
+    return output_data
+
+
+def get_conn_info():
+    return parse_conn_info(fetch_conn_info)

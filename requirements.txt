@@ -4,6 +4,7 @@ flake8==7.0.0
 idna==3.6
 influxdb-client==1.41.0
 mccabe==0.7.0
+numpy==1.26.4
 pycodestyle==2.11.1
 pyflakes==3.2.0
 python-dateutil==2.9.0.post0
