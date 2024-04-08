@@ -1,0 +1,133 @@
+{
+  "pid": "docOv",
+  "hide": {
+    "wps": true,
+    "shareUsb": true,
+    "faxSet": true,
+    "dectRdio": true,
+    "wGuest": true,
+    "rrd": true,
+    "ssoSet": true,
+    "wKey": true,
+    "ssoPass": true,
+    "dvbSig": true,
+    "liveImg": true,
+    "liveTv": true,
+    "dvbradio": true,
+    "tvhd": true,
+    "dectMoniEx": true,
+    "rss": true,
+    "mobile": true,
+    "wlanmesh": true,
+    "dectMoni": true,
+    "dectMail": true,
+    "wSet": true,
+    "dvbSet": true,
+    "tvsd": true
+  },
+  "timeTillLogout": "1198",
+  "time": [],
+  "data": {
+    "connectionData": {
+      "modell": "FRITZ!Box 6591 Cable (lgi)",
+      "fullLine": false,
+      "dsCount": 30,
+      "isDebug": false,
+      "versiontext": "DOCSIS-Software-Version:",
+      "usFreqs": {
+        "max": 85,
+        "values": {
+          "docsis3_1": [
+            [
+              54.4,
+              64.8
+            ]
+          ],
+          "docsis3_0": [
+            44.6,
+            37.2,
+            30.7999,
+            51.0002
+          ]
+        },
+        "min": 5
+      },
+      "dsCountSecond": 2,
+      "usRate": "52,5 Mbit/s",
+      "debugidx": 0,
+      "externApValue": "Arris",
+      "frequencyBand": {
+        "docsis3_1": true,
+        "docsis3_0": true
+      },
+      "usCount": 4,
+      "frequencyScantext": "Verbindungsaufbau läuft... Dieser Vorgang kann je nach Anschluss bis zu 5 Minuten dauern.",
+      "externAPHeader": "Kopfstelle (CMTS)",
+      "externApText": "CMTS-Hersteller:",
+      "usCountSecond": 1,
+      "showCableImg": true,
+      "mac": "1C:ED:6F:5D:8F:AD",
+      "version": "7.3.1.0.65",
+      "dsRate": "1126,4 Mbit/s",
+      "line": [
+        {
+          "state": "ready",
+          "timePrefix": "Verbindungsdauer:",
+          "trainState": "aktiv",
+          "mode": "DOCSIS 3.0 und DOCSIS 3.1",
+          "trainStatePrefix": "Kabel-Internet:",
+          "time": "6 Stunden und 57 Minuten"
+        }
+      ],
+      "dsFreqs": {
+        "max": 1218,
+        "values": {
+          "docsis3_1": [
+            [
+              750.975,
+              860.975
+            ],
+            [
+              398.975,
+              460.975
+            ]
+          ],
+          "docsis3_0": [
+            602,
+            474,
+            482,
+            490,
+            498,
+            522,
+            530,
+            538,
+            546,
+            554,
+            562,
+            570,
+            578,
+            586,
+            594,
+            618,
+            626,
+            634,
+            642,
+            650,
+            658,
+            666,
+            674,
+            682,
+            690,
+            698,
+            706,
+            730,
+            738,
+            746
+          ]
+        },
+        "min": 108
+      }
+    }
+  },
+  "sid": "d4addb10e97f1d2c"
+}

@@ -1,0 +1,279 @@
+{
+  "pid": "netMoni",
+  "hide": {
+    "wps": true,
+    "shareUsb": true,
+    "faxSet": true,
+    "dectRdio": true,
+    "wGuest": true,
+    "rrd": true,
+    "ssoSet": true,
+    "wKey": true,
+    "ssoPass": true,
+    "dvbSig": true,
+    "liveImg": true,
+    "liveTv": true,
+    "dvbradio": true,
+    "tvhd": true,
+    "dectMoniEx": true,
+    "rss": true,
+    "mobile": true,
+    "wlanmesh": true,
+    "dectMoni": true,
+    "dectMail": true,
+    "wSet": true,
+    "dvbSet": true,
+    "tvsd": true
+  },
+  "timeTillLogout": "1149",
+  "time": [],
+  "data": {
+    "other": {
+      "myfritz": {
+        "url": "https://epi3kiri9t1ch5t5.myfritz.net:49693",
+        "connected": true,
+        "user": "sb@buero-robot.com"
+      },
+      "remote": {
+        "ftps": false,
+        "https": true,
+        "ftp": false
+      }
+    },
+    "connections": [
+      {
+        "active": true,
+        "medium_upstream": 52480,
+        "downstream": 1126400,
+        "role": "single",
+        "provider": "",
+        "ipv4": {
+          "connected": true,
+          "dns": [
+            {
+              "type": "normal",
+              "purpose": "standard",
+              "ip": "81.210.129.4"
+            },
+            {
+              "type": "normal",
+              "ip": "80.69.96.12"
+            }
+          ],
+          "dslite": false,
+          "ip": "178.203.230.235",
+          "since": 1712316970
+        },
+        "ipv6": {
+          "ip_lifetime": {
+            "valid": 82702,
+            "preferred": 39502
+          },
+          "connected": true,
+          "dns": [
+            {
+              "type": "normal",
+              "ip": "2a02:908:2:b::1"
+            },
+            {
+              "type": "normal",
+              "ip": "2a02:908:2:a::1"
+            }
+          ],
+          "ip": "2a02:908:1900:6::4054/64",
+          "prefix": "2a02:908:1962:ada0::/59",
+          "prefix_lifetime": {
+            "valid": 82702,
+            "preferred": 39502
+          },
+          "since": 1712230579
+        },
+        "shapedrate": false,
+        "medium_downstream": 1126400,
+        "state": "connected",
+        "name": "internet",
+        "type": "cable",
+        "upstream": 52480,
+        "ready_for_fallback": false,
+        "connected": true,
+        "medium": "cable"
+      }
+    ],
+    "show_guest": true,
+    "sampling_interval": 5000,
+    "box_type": "cable",
+    "sync_groups": [
+      {
+        "us_bps_curr_max": 135885674,
+        "us_default_bps_curr": [
+          712,
+          770,
+          532,
+          546,
+          559,
+          5466,
+          3856,
+          12308,
+          11594,
+          15537,
+          4349,
+          7604,
+          14,
+          13302,
+          890,
+          5215,
+          2280,
+          11307,
+          1447,
+          730
+        ],
+        "ds_bps_max": 858742812,
+        "_node": "sg0",
+        "mode": "CABLE",
+        "ds_mc_bps_curr": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ds_bps_curr": [
+          36230,
+          1799965,
+          2530,
+          1448755,
+          4795297,
+          4795297,
+          4795297,
+          1338040,
+          9422,
+          283781,
+          950626,
+          950626,
+          19153,
+          20729,
+          22827,
+          16833,
+          1788021,
+          11210,
+          1788235,
+          7178
+        ],
+        "us_bps_max": 270857536,
+        "dynamic": true,
+        "us_realtime_bps_curr": [
+          4370,
+          18096918,
+          1158,
+          135880208,
+          135880208,
+          135880208,
+          10750081,
+          10750081,
+          43296803,
+          43296803,
+          43296803,
+          11417,
+          11417,
+          10656,
+          15487,
+          55706,
+          796,
+          4457,
+          56964303,
+          4491
+        ],
+        "downstream": 3600000,
+        "upstream": 384000,
+        "name": "sync_cable",
+        "guest_us_bps": [
+          0
+        ],
+        "ds_guest_bps_curr": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "us_background_bps_curr": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ds_bps_curr_max": 4795297,
+        "us_important_bps_curr": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "ip_client": false
+  },
+  "sid": "d4addb10e97f1d2c"
+}

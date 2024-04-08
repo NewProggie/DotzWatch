@@ -1,0 +1,341 @@
+{
+  "pid": "overview",
+  "hide": {
+    "wps": true,
+    "shareUsb": true,
+    "faxSet": true,
+    "dectRdio": true,
+    "wGuest": true,
+    "rrd": true,
+    "ssoSet": true,
+    "wKey": true,
+    "ssoPass": true,
+    "dvbSig": true,
+    "liveImg": true,
+    "liveTv": true,
+    "dvbradio": true,
+    "tvhd": true,
+    "dectMoniEx": true,
+    "rss": true,
+    "mobile": true,
+    "wlanmesh": true,
+    "dectMoni": true,
+    "dectMail": true,
+    "wSet": true,
+    "dvbSet": true,
+    "tvsd": true
+  },
+  "timeTillLogout": "1151",
+  "time": [],
+  "data": {
+    "fritzos": {
+      "isLabor": false,
+      "NoPwd": false,
+      "connectionStatus": true,
+      "ShowDefaults": false,
+      "boxDate": "20:22:50 05.04.2024",
+      "nspver": "7.57",
+      "Productname": "FRITZ!Box 6591 Cable (lgi)",
+      "FirmwareSigned": true,
+      "twofactor_disabled": false,
+      "fb_name": "",
+      "showUpdate": false,
+      "isUpdateAvail": false,
+      "energy": "20",
+      "iframeUrl": "https://fritzhelp.avm.de/help/?hardware=233&oem=lgi&language=de&country=049&version=161.07.57&subversion=&set=021&action=feature"
+    },
+    "docsis": {
+      "txt": "verbunden",
+      "led": "led green",
+      "title": "Kabel",
+      "up": 52480,
+      "down": 1126400,
+      "link": "docOv"
+    },
+    "lan": {
+      "txt": "verbunden (LAN 1, LAN 2)",
+      "led": "led green",
+      "title": "LAN",
+      "link": "netDev"
+    },
+    "foncalls": {
+      "callsToday": "0",
+      "calls": [],
+      "activecalls": []
+    },
+    "comfort": {
+      "func": [
+        {
+          "linktxt": "Anrufbeantworter",
+          "details": "deaktiviert",
+          "link": "tam"
+        },
+        {
+          "linktxt": "Telefonbuch",
+          "details": "1 Telefonbuch vorhanden",
+          "link": "bookLi"
+        },
+        {
+          "linktxt": "Speicher (NAS)",
+          "details": " 190 MB genutzt, 2,9 GB frei",
+          "link": "usbOv"
+        },
+        {
+          "linktxt": "Kindersicherung",
+          "details": "bereit",
+          "link": "kidLis"
+        },
+        {
+          "linktxt": "FRITZ!Box-Dienste",
+          "details": "erreichbar aus dem Internet (HTTPS)",
+          "link": "remoteHttps"
+        }
+      ],
+      "anyComfort": true
+    },
+    "net": {
+      "anyUnmeshedDevices": true,
+      "count": 16,
+      "active_count": 16,
+      "devices": [
+        {
+          "own_client_device": false,
+          "type": "lan",
+          "name": "BRNB422007C7BA1",
+          "stateinfo": {
+            "active": true
+          },
+          "url": ""
+        },
+        {
+          "own_client_device": false,
+          "type": "lan",
+          "name": "DESKTOP-SJ9L9E2",
+          "stateinfo": {
+            "active": true
+          },
+          "url": ""
+        },
+        {
+          "own_client_device": false,
+          "type": "lan",
+          "name": "DS920",
+          "stateinfo": {
+            "active": true
+          },
+          "url": ""
+        },
+        {
+          "own_client_device": false,
+          "type": "lan",
+          "name": "KWC-Synology",
+          "stateinfo": {
+            "active": true
+          },
+          "url": ""
+        },
+        {
+          "own_client_device": false,
+          "type": "lan",
+          "name": "Kais-AirPort-Time-Capsule",
+          "stateinfo": {
+            "active": true
+          },
+          "url": ""
+        },
+        {
+          "own_client_device": false,
+          "type": "lan",
+          "name": "MBP-SB-OTH",
+          "stateinfo": {
+            "active": true
+          },
+          "url": ""
+        },
+        {
+          "own_client_device": false,
+          "type": "lan",
+          "name": "PC-0A-8A-D5-BC-31-3D",
+          "stateinfo": {
+            "active": true
+          },
+          "url": ""
+        },
+        {
+          "own_client_device": false,
+          "type": "lan",
+          "name": "FRITZ!Repeater 3000, PC-48-5D-35-AF-F8-A0",
+          "stateinfo": {
+            "meshable": true,
+            "active": true
+          },
+          "url": "http://[fe80::4c5d:35ff:feaf:f8a3]"
+        },
+        {
+          "own_client_device": false,
+          "type": "lan",
+          "name": "FRITZ!Repeater 3000, PC-48-5D-35-AF-FE-5E",
+          "stateinfo": {
+            "meshable": true,
+            "active": true
+          },
+          "url": "http://[fe80::4c5d:35ff:feaf:fe61]"
+        },
+        {
+          "own_client_device": false,
+          "type": "lan",
+          "name": "PC-5C-97-F3-CB-80-2B",
+          "stateinfo": {
+            "active": true
+          },
+          "url": ""
+        },
+        {
+          "own_client_device": false,
+          "type": "lan",
+          "name": "PC-90-CC-DF-39-FE-2C",
+          "stateinfo": {
+            "active": true
+          },
+          "url": ""
+        },
+        {
+          "own_client_device": false,
+          "type": "lan",
+          "name": "PC-F0-77-C3-93-13-9F",
+          "stateinfo": {
+            "active": true
+          },
+          "url": ""
+        },
+        {
+          "own_client_device": false,
+          "type": "lan",
+          "name": "Switch",
+          "stateinfo": {
+            "active": true
+          },
+          "url": ""
+        },
+        {
+          "own_client_device": false,
+          "type": "lan",
+          "name": "dotzbox",
+          "stateinfo": {
+            "active": true
+          },
+          "url": ""
+        },
+        {
+          "own_client_device": false,
+          "type": "lan",
+          "name": "nwscreen",
+          "stateinfo": {
+            "active": true
+          },
+          "url": ""
+        },
+        {
+          "own_client_device": false,
+          "type": "lan",
+          "name": "nwscreen",
+          "stateinfo": {
+            "active": true
+          },
+          "url": ""
+        }
+      ],
+      "otherAVMUpdates": 0
+    },
+    "vpn": {
+      "title": "Fernzugang",
+      "elements": []
+    },
+    "fonnum": {
+      "txt": "Keine Rufnummern eingerichtet",
+      "led": "led",
+      "title": "Telefonie",
+      "link": "numLi"
+    },
+    "dect": {
+      "txt": "aus",
+      "led": "led",
+      "title": "DECT",
+      "link": "dectSet"
+    },
+    "usb": {
+      "count": 0
+    },
+    "internet": {
+      "box_type": "cable",
+      "connections": [
+        {
+          "active": true,
+          "medium_upstream": 52480,
+          "downstream": 1126400,
+          "role": "single",
+          "provider": "",
+          "ipv4": {
+            "connected": true,
+            "dns": [
+              {
+                "type": "normal",
+                "purpose": "standard",
+                "ip": "81.210.129.4"
+              },
+              {
+                "type": "normal",
+                "ip": "80.69.96.12"
+              }
+            ],
+            "dslite": false,
+            "ip": "178.203.230.235",
+            "since": 1712316970
+          },
+          "ipv6": {
+            "ip_lifetime": {
+              "valid": 83604,
+              "preferred": 40404
+            },
+            "connected": true,
+            "dns": [
+              {
+                "type": "normal",
+                "ip": "2a02:908:2:b::1"
+              },
+              {
+                "type": "normal",
+                "ip": "2a02:908:2:a::1"
+              }
+            ],
+            "ip": "2a02:908:1900:6::4054/64",
+            "prefix": "2a02:908:1962:ada0::/59",
+            "prefix_lifetime": {
+              "valid": 83604,
+              "preferred": 40404
+            },
+            "since": 1712230579
+          },
+          "shapedrate": false,
+          "medium_downstream": 1126400,
+          "state": "connected",
+          "name": "internet",
+          "type": "cable",
+          "upstream": 52480,
+          "ready_for_fallback": false,
+          "connected": true,
+          "medium": "cable"
+        }
+      ]
+    },
+    "wlan": [
+      {
+        "txt": "aus, Funknetz : Dotze_Dudes",
+        "led": "led",
+        "title": "WLAN",
+        "link": "wSet"
+      }
+    ]
+  },
+  "sid": "d4addb10e97f1d2c"
+}
