@@ -15,12 +15,9 @@ def get_sid():
     except FileNotFoundError:
         sid = kInvalidSid
 
-    if sid != kInvalidSid:
-        return sid
-
     login_sid_url = get_login_sid_url()
     login_check = get(f"{login_sid_url}?sid={sid}", verify=False)
-    if kInvalidSid in login_check.text:
+    if kInvalidSid in login_check.text or sid == kInvalidSid:
         challenge_response = get(f"{login_sid_url}", verify=False)
         challenge = challenge_response.text.split("<Challenge>")[1].split("</Challenge>")[0]
         user, passw = get_user_credentials()
