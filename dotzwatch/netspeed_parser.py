@@ -35,4 +35,4 @@ def parse_netspeed_info(info):
 
 
 def get_netspeed_info():
-    return parse_netspeed_info(fetch_netspeed_info)
+    return parse_netspeed_info(fetch_netspeed_info())
