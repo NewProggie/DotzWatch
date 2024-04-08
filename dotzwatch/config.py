@@ -24,7 +24,7 @@ def get_user_credentials():
 def get_login_sid_url():
     fritzbox = get_env("FRITZBOX")
     port = get_env("FRITZ_PORT")
-    return "https://{fritzbox}:{port}/login_sid.lua"
+    return f"https://{fritzbox}:{port}/login_sid.lua"
 
 
 def get_data_url():
