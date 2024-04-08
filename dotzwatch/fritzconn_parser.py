@@ -54,4 +54,4 @@ def parse_conn_info(info):
 
 
 def get_conn_info():
-    return parse_conn_info(fetch_conn_info)
+    return parse_conn_info(fetch_conn_info())
