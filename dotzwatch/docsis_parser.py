@@ -32,7 +32,8 @@ def parse_docsis_info(docsis_data):
         output_data.append(
             {
             "mode": "up",
-            "channel": channel['channelID'],
+            "channel": channel['channel'],
+            "channelID": channel['channelID'],
             "Modulation": float(channel[modulation_key].replace('QAM', '')),
             "PowerLevel": float(channel['powerLevel']),
             "Frequenz": float(channel['frequency']),
@@ -45,7 +46,8 @@ def parse_docsis_info(docsis_data):
         output_data.append(
             {
             "mode": "down",
-            "channel": channel['channelID'],
+            "channel": channel['channel'],
+            "channelID": channel['channelID'],
             "Modulation": float(channel[modulation_key].replace('QAM', '')),
             "PowerLevel": float(channel['powerLevel']),
             "Frequenz": float(channel['frequency']),

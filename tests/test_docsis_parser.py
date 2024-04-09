@@ -22,6 +22,7 @@ class TestDOCSISParser(TestCase):
         for record in result:
             self.assertTrue("mode" in record.keys())
             self.assertTrue("channel" in record.keys())
+            self.assertTrue("channelID" in record.keys())
             self.assertTrue("Modulation" in record.keys())
             self.assertTrue("PowerLevel" in record.keys())
             self.assertTrue("Frequenz" in record.keys())
