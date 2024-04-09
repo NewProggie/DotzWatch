@@ -33,7 +33,7 @@ def main():
     for info in get_conn_info():
         point = Point("fritzbox")
         for k, v in info.items():
-            point.tag(k, v)
+            point.field(k, v)
         write_api.write(bucket="fritzbox", org=kOrg, record=point)
 
     # write netspeed benchmark
