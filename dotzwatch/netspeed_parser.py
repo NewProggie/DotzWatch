@@ -21,7 +21,7 @@ def parse_netspeed_info(info):
     output_data = []
 
     ds_bps_curr = info["data"]["sync_groups"][0]["ds_bps_curr"]
-    us_default_bps_curr = info["data"]["sync_groups"][0]["us_realtime_bps_curr"]
+    us_default_bps_curr = info["data"]["sync_groups"][0]["us_default_bps_curr"]
     ds_ninety_fifth_percentile = percentile(ds_bps_curr, 95) / 8 / (2**20)
     us_ninety_fifth_percentile = percentile(us_default_bps_curr, 95) / 8 / (2**20)
     output_data.append(
