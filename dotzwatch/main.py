@@ -24,6 +24,7 @@ def main():
     for record in get_docsis_info():
         point = Point("docsis")
         point.tag("mode", record.pop("mode"))
+        point.tag("channel", record.pop("channel"))
         for k, v in record.items():
             point.field(k, v)
         write_api.write(bucket="docsis", org=kOrg, record=point)
